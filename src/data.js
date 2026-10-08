@@ -46,26 +46,10 @@ export const pages = [
   },
   {
     id: 'map-set-loops',
-    eyebrow: '02 · 查找与遍历',
-    title: 'Map, Set & Loops',
-    shortTitle: 'Map, Set & Loops',
+    eyebrow: '02 · 遍历与去重',
+    title: 'Loops & Sets',
+    shortTitle: 'Loops & Sets',
     sections: [
-      {
-        title: 'Hash Map / Dictionary (JS Object)',
-        rows: [
-          row('create', 'd = {}', 'const d = {}', 'new Dictionary<int,int>()'),
-          row('set', 'd[k] = v', 'd[k] = v', 'd[k] = v'),
-          row('get', 'd[k]', 'd[k]', 'd[k]'),
-          row('default', 'd.get(k,0)', 'd[k] ?? 0', 'd.GetValueOrDefault(k,0)'),
-          row('contains', 'k in d', 'Object.hasOwn(d,k)', 'd.ContainsKey(k)'),
-          row('delete', 'del d[k]', 'delete d[k]', 'd.Remove(k)'),
-          row('keys', 'd.keys()', 'Object.keys(d)', 'd.Keys'),
-          row('values', 'd.values()', 'Object.values(d)', 'd.Values'),
-          row('pairs', 'd.items()', 'Object.entries(d)', 'foreach(var kv in d)'),
-          row('length', 'len(d)', 'Object.keys(d).length', 'd.Count'),
-          row('count +1', 'd[k]=d.get(k,0)+1', 'd[k]=(d[k]??0)+1', 'd[k]=d.GetValueOrDefault(k)+1'),
-        ],
-      },
       {
         title: 'Loops',
         rows: [
