@@ -11,6 +11,7 @@
   --muted: #687184;
   --lime: #d9ff5d;
   --orange: #ff6b3d;
+  --font-code: 'Cascadia Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', 'Microsoft YaHei UI', 'PingFang SC', monospace;
 }
 
 * { box-sizing: border-box; }
@@ -101,10 +102,10 @@ table { width: 100%; border-collapse: collapse; table-layout: fixed; }
 th, td { text-align: left; vertical-align: top; }
 th { padding: 10px 13px; color: #536074; background: #e8edf2; font-size: 12.5px; font-weight: 800; }
 th:first-child, td:first-child { width: 16.5%; }
-td { padding: 8px 13px; border-top: 1px solid rgba(207,214,223,.52); color: #465369; font-size: 12.5px; line-height: 1.4; }
+td { padding: 8px 13px; border-top: 1px solid rgba(207,214,223,.52); color: #465369; font-family: var(--font-code); font-size: 12.5px; font-weight: 500; line-height: 1.4; }
 tbody tr:first-child td { border-top: 0; }
 tbody tr:hover td { background: #eef7ce; }
-td code { color: #121a2a; font-family: 'DM Mono', ui-monospace, monospace; font-size: 12px; line-height: 1.4; letter-spacing: -.01em; white-space: nowrap; }
+td code { color: #121a2a; font-family: inherit; font-size: 12px; font-weight: inherit; line-height: 1.4; letter-spacing: -.01em; white-space: nowrap; }
 .page-note { margin: -5px 2px 0; padding-left: 13px; border-left: 3px solid var(--orange); color: #5e6878; font-size: 11px; line-height: 1.65; }
 .page-footer { min-height: 38px; display: flex; align-items: center; justify-content: space-between; padding: 0 32px; border-top: 1px solid #e0e3df; color: #9a9f9e; font-family: 'DM Mono', monospace; font-size: 7px; letter-spacing: .13em; }
 
